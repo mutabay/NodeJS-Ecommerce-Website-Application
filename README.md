@@ -1,3 +1,4 @@
+Project Name : first-application
 # first-application - Simple E-Commerce MVC Concept Website with NodeJS, MONGODB.
 
 # There is 2 kind of user. Onyl admin users can add product or category.

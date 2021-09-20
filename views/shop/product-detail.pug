@@ -1,0 +1,32 @@
+extends ../layouts/main-layout.pug
+
+block content   
+
+    .row.my-5
+        .col-md-6
+            img(src=`/img/${product.imageUrl}` alt=`${product.description}`).img-fluid.rounded
+
+        .col-md-6.pl-3
+            h2.product-header.mb-3 #{product.name}
+            hr
+
+            a#product-tags(href="").p-2.mb-3 #{product.tags}
+            .mb-4
+
+            h4.mb-3#product-price #{product.price} ₺
+
+            form(action='/cart' method='POST')
+                    input(type="hidden" name="_csrf" value=`${csrfToken}`)
+                    input(type='hidden' name='productId' value=`${product._id}`)
+                    button(type='submit').btn.btn-outline-primary.btn-lg.ml-0 Add to Cart 
+                     
+
+
+    .row
+        .col-md-12
+            hr
+            p.p-3 !{product.description}
+            
+           
+            
+                    

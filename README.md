@@ -18,7 +18,7 @@ Project Name : first-application
 # Fill email server api key.
 # Views are written as a pug file.
 
-# npm start
+$npm start
 
 ![image](https://user-images.githubusercontent.com/60510780/133971728-f4550a65-5d03-4e8b-8072-3aabf230041b.png)
 ![image](https://user-images.githubusercontent.com/60510780/133971790-17530a0e-2911-43b1-809f-fc72d1fc8119.png)
